@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int n = 7, a = 0, b = 1, sum = 0, term;
+    for (int i = 1; i <= n; i++) {
+        term = a;
+        sum += a;
+        int next = a + b;
+        a = b;
+        b = next;
+    }
+    printf("Nth term: %d\nSum: %d\n", term, sum);
+    return 0;
+}
